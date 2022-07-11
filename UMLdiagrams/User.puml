@@ -1,0 +1,72 @@
+@startuml
+left to right direction
+Rectangle System{
+(Check Flight Schedule)
+(Login)
+(Register)
+(Book Flight tickets)
+(Cancel Flight tickets)
+(Check Booking details)
+(Logout)
+}
+Customer--->(Check Flight Schedule)
+Customer--->(Book Flight tickets)
+Customer--->(Cancel Flight tickets)
+Customer--->(Login)
+Customer--->(Register)
+Customer--->(Logout)
+Customer--->(Check Booking details)
+
+@enduml
+
+
+@startuml
+left to right direction
+Rectangle System{
+(Manage flights)
+(Login)
+(Logout)
+(Manage User)
+(Manage Booking)
+}
+Admin--->(Manage flights)
+Admin--->(Login)
+Admin--->(Logout)
+Admin--->(Manage User)
+Admin--->(Manage Booking)
+@enduml
+
+@startuml
+left to right direction
+Package Manage_Flights{
+(Add a Flight)
+(Remove a FLight)
+(Maintain schedule of flights)
+(Update fare of flights)
+
+}
+Admin--->(Add a Flight)
+Admin--->(Remove a FLight)
+Admin--->(Maintain schedule of flights)
+Admin--->(Update fare of flights)
+
+@enduml
+
+
+@startuml
+left to right direction
+Package Manage_User{
+(View all the details of a user)
+}
+Admin--->(View all the details of a user)
+@enduml
+
+@startuml
+left to right direction
+Package Manage_Booking{
+(View the details of all user bookings)
+}
+Admin--->(View the details of all user bookings)
+@enduml
+
+
